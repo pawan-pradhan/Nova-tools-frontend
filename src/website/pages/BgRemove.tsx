@@ -38,7 +38,8 @@ export default function BgRemove() {
             const formData = new FormData();
             formData.append("image", image);
 
-            const res = await fetch("http://localhost:5000/remove-bg-ai", {
+            // const res = await fetch("http://localhost:5000/remove-bg-ai", {
+            const res = await fetch("https://nova-tools-backend.onrender.com:5000/remove-bg-ai", {
                 method: "POST",
                 body: formData,
             });
